@@ -1,16 +1,99 @@
-# React + Vite
+Contact Management System (MERN Stack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Contact Management System built using the MERN Stack (MongoDB, Express, React, Node.js). This app allows users to add, view, update, and delete contacts with features like categorizing contact status and tracking interactions.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Add new contacts with name, email, phone, and company.
 
-## React Compiler
+Track contact status: Interested, Follow-up, or Closed.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+View a list of all contacts.
 
-## Expanding the ESLint configuration
+Delete or update contacts.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive React frontend with modern UI.
+
+Backend API using Node.js + Express.
+
+Data storage in MongoDB.
+
+Persistent data with Mongoose schemas.
+
+Tech Stack
+
+Layer Technology
+
+Frontend React.js, CSS
+
+Backend Node.js, Express.js
+
+Database MongoDB (Atlas or local)
+
+ORM / ODM Mongoose
+
+Dev Tools VS Code, Postman (for testing API)
+
+Folder Structure
+
+contact-management/ │ ├─ backend/ │ ├─ models/ # Mongoose schemas (Contact.js) │ ├─ routes/ # Express routes (contactRoutes.js) │ ├─ server.js # Main server file │ └─ .env # Environment variables (MONGODB_URI) │ ├─ frontend/ │ ├─ src/ │ │ ├─ components/ # React components │ │ ├─ App.jsx # Main app component │ │ └─ index.jsx # React entry point │ └─ package.json # React dependencies │ └─ README.md # Project documentation Installation & Setup
+
+Backend
+
+Go to the backend folder:
+
+cd backend
+
+Install dependencies:
+
+npm install
+
+Create a .env file:
+
+MONGODB_URI=your_mongodb_connection_string
+
+PORT=5000
+
+Start the backend server:
+
+npm run dev
+
+Backend API will run at http://localhost:5000.
+
+Frontend
+
+Go to the frontend folder:
+
+cd frontend
+
+Install dependencies:
+
+npm install
+
+Start the frontend app:
+
+npm start
+
+React app will run at http://localhost:3000.
+
+API Endpoints
+
+Method Endpoint Description
+
+GET /contact Get all contacts
+
+POST /contact Add a new contact
+
+GET /contact/:id Get a single contact
+
+PUT /contact/:id Update a contact
+
+DELETE /contact/:id Delete a contact
+
+Example Contact Schema { name: "John Doe", email: "john@example.com", phone: "1234567890", company: "ABC Corp", status: "Interested", // Options: Interested, Follow-up, Closed createdAt: Date } Screenshots
+
+(You can add screenshots of your React UI here)
+
+License MIT License © 2026
+
+Name Gunasekar M
